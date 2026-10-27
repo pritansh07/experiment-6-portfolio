@@ -1,0 +1,7 @@
+const menuButton=document.getElementById("menuButton")
+const navMenu=document.getElementById("navMenu")
+const contactForm=document.getElementById("contactForm")
+const formMessage=document.getElementById("formMessage")
+menuButton.addEventListener("click",()=>{const open=navMenu.classList.toggle("open");menuButton.setAttribute("aria-expanded",open);menuButton.textContent=open?"×":"☰"})
+navMenu.querySelectorAll("a").forEach(link=>{link.addEventListener("click",()=>{navMenu.classList.remove("open");menuButton.setAttribute("aria-expanded","false");menuButton.textContent="☰"})})
+contactForm.addEventListener("submit",event=>{event.preventDefault();const name=document.getElementById("name").value.trim();formMessage.textContent=`Thanks${name?`, ${name}`:""}. Your message is ready to be sent.`;contactForm.reset()})

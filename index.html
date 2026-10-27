@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pritansh's digital portfolio and web design studio.">
+  <title>Pritansh | Digital Portfolio</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">Pritansh<span>.</span></a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="navMenu">
+      <a href="#about">About</a><a href="#work">Work</a><a href="#services">Services</a><a class="nav-contact" href="#contact">Let’s talk</a>
+    </nav>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Designing clear digital experiences</p>
+        <h1>Websites that feel simple, useful, and memorable.</h1>
+        <p class="intro">I build responsive web experiences with a focus on good structure, thoughtful details, and straightforward code.</p>
+        <div class="hero-actions"><a class="button primary" href="#work">View selected work</a><a class="text-link" href="#contact">Start a project <span>↗</span></a></div>
+      </div>
+      <div class="hero-visual"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1100&q=85" alt="Designer working at a desk" width="1100" height="1300"><div class="floating-card"><strong>Available for work</strong><span>Web design and frontend</span></div></div>
+    </section>
+    <section class="numbers" aria-label="Highlights"><div><strong>01</strong><span>Developer</span></div><div><strong>02</strong><span>Designer</span></div><div><strong>03</strong><span>Problem solver</span></div></section>
+    <section class="about section" id="about"><p class="eyebrow">About</p><div class="split"><h2>A clean process for turning an idea into a working website.</h2><div><p>I like websites that make sense quickly. Each project starts with the content and structure, then moves to the visual design and the details that make it easy to use.</p><a class="text-link" href="#contact">More about my approach <span>↗</span></a></div></div></section>
+    <section class="work section" id="work"><div class="section-heading"><div><p class="eyebrow">Selected work</p><h2>Recent projects</h2></div><a class="text-link" href="#contact">See what we can make <span>↗</span></a></div><div class="project-grid">
+      <article class="project large"><img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1200&q=85" alt="Colorful web interface on a screen" width="1200" height="800"><div class="project-info"><div><h3>North Studio</h3><p>Brand site · 2026</p></div><span>↗</span></div></article>
+      <article class="project"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85" alt="Analytics dashboard on a laptop" width="900" height="900" loading="lazy"><div class="project-info"><div><h3>Metric Flow</h3><p>Product page · 2026</p></div><span>↗</span></div></article>
+      <article class="project"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85" alt="Modern workspace interior" width="900" height="900" loading="lazy"><div class="project-info"><div><h3>Common Ground</h3><p>Creative space · 2025</p></div><span>↗</span></div></article>
+    </div></section>
+    <section class="services section" id="services"><p class="eyebrow">Services</p><div class="service-list"><article><span>01</span><h3>Website design</h3><p>Clear page layouts and visual direction for a site that feels like yours.</p></article><article><span>02</span><h3>Frontend development</h3><p>Responsive, accessible HTML, CSS, and JavaScript built for the browser.</p></article><article><span>03</span><h3>Refresh and improve</h3><p>Practical changes for an existing website that needs a better structure or look.</p></article></div></section>
+    <section class="contact section" id="contact"><div><p class="eyebrow">Have a project in mind?</p><h2>Let’s make something that works well.</h2></div><form id="contactForm"><label>Your name<input id="name" name="name" type="text" placeholder="Name" required></label><label>Email address<input name="email" type="email" placeholder="you@example.com" required></label><label>Tell me a little about it<textarea name="message" placeholder="Your project" required></textarea></label><button class="button primary" type="submit">Send enquiry</button><p id="formMessage" aria-live="polite"></p></form></section>
+  </main>
+  <footer><a class="brand" href="#home">Pritansh<span>.</span></a><p>© 2026 Pritansh. Built for the web.</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
